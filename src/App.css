@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+:root{
+  --main-color: #2F904F
+}
+.navbar{
+  height: 70px;
+}
+.navbar-brand{
+  color: var(--main-color);
+}
+.nav-link{
+  color: black
+}
+.avatar{
+  height: 40px;
+}
+.title-left-menu{
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.sub-title{
+  color: grey;
+  font-size: 16px;
+  line-height: 2.1rem;
+}
+.card-title{
+  padding-left: 0rem;
+  font-size: 14px;
+  line-height: 2.1rem;
+  font-weight: bold;
+}
+.sub-title-card{
+  color: grey;
+  font-size: 15px;
+  line-height: 2.1rem;
+}
+.card-content{
+  font-size: 15px;
+  line-height: 2.1rem;
+  font-weight: 600;
+}
+input[type="checkbox"] {
+  display:none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="checkbox"] + label span {
+  display:inline-block;
+  width:19px;
+  height:19px;
+  background-color: white;
+  border: 1px solid;
+  cursor:pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="checkbox"]:checked + label span {
+  background:url("./checkbox.png") top no-repeat;
+  border: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover{
+  color: var(--main-color);
 }
